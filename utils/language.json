@@ -1,0 +1,18 @@
+{
+  "en": {
+    "battery_low_title": "Low Battery",
+    "battery_low_message": "Battery at {percent}%. Please connect the charger.",
+    "battery_low_audio": "utils/low_en.wav",
+    "battery_error_title": "Error reading battery",
+    "battery_error_message": "Unable to get battery status.",
+    "battery_error_audio": "utils/error_en.wav"
+  },
+  "es": {
+    "battery_low_title": "Batería baja",
+    "battery_low_message": "Batería al {percent}%. Conecta el cargador.",
+    "battery_low_audio": "utils/low_es.wav",
+    "battery_error_title": "Error al leer la batería",
+    "battery_error_message": "No se pudo obtener el estado de la batería.",
+    "battery_error_audio": "utils/error_es.wav"
+  }
+}
