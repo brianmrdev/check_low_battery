@@ -50,19 +50,24 @@ Como programador, a menudo me encuentro absorto en mi trabajo, lo que me lleva a
     ```ini
     [Unit]
     Description=Battery Monitor Script
-    After=multi-user.target
+    After=graphical.target
 
     [Service]
     Type=simple
     ExecStart=/opt/check_low_battery/env/bin/python3 /opt/check_low_battery/main.py
+    WorkingDirectory=/opt/check_low_battery
     Restart=always
     User=tu_usuario
+    Environment=DISPLAY=:0
+    Environment=XAUTHORITY=/home/tu_usuario/.Xauthority
+    Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/tu_id/bus
+    Environment=XDG_RUNTIME_DIR=/run/user/tu_id
 
     [Install]
-    WantedBy=default.target
+    WantedBy=graphical.target
     ```
 
-   > **Nota**: Cambia `tu_usuario` por tu nombre de usuario de Linux.
+   > **Nota**: Ejecuta el script `check_env_vars.py` y remplaza las variables que te devuelve.
 
 3. Guarda el archivo y recarga los servicios de **systemd** para aplicar los cambios:
     ```bash

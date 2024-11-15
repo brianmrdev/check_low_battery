@@ -40,7 +40,7 @@ class CustomNotify(Notify):
 def notify_battery_low(config, percent):
     notification = CustomNotify(
         title=config["battery_low_title"],
-        message=config["battery_low_message"].format(percent=percent),
+        message = config["battery_low_message"].format(percent=f"{percent:.2f}"),
         icon="utils/low-battery.png",
         audio=config["battery_low_audio"]
     )
