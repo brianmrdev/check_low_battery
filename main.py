@@ -5,7 +5,7 @@ from notifypy import Notify
 from pathlib import Path
 
 # Constantes
-BATTERY_LOW_THRESHOLD = 100
+BATTERY_LOW_THRESHOLD = 30
 CHECK_INTERVAL = 600  # 10 minutos
 LANGUAGE = "en"  # Las opciones posibles son "es" para español o "en" para inglés
 

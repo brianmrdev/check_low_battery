@@ -20,17 +20,21 @@ Como programador, a menudo me encuentro absorto en mi trabajo, lo que me lleva a
 
 1. Clona el repositorio en una ubicación deseada (por ejemplo, `/opt`):
     ```bash
-    sudo git clone https://github.com/brianmrdev/check_low_battery.git /opt
+    sudo git clone https://github.com/brianmrdev/check_low_battery.git /opt/check_low_battery
     ```
    
 2. Crea y activa un entorno virtual en la carpeta del proyecto:
     ```bash
     cd /opt/check_low_battery
-    python3 -m venv env
+    sudo python3 -m venv env
     source env/bin/activate
     ```
+3. Cambia los permisos del directorio:
+    ```bash
+    sudo chown -R tu_usuario:tu_usuario /opt/check_low_battery
+    ```
 
-3. Instala las dependencias:
+4. Instala las dependencias:
     ```bash
     pip install psutil notify_py
     ```
@@ -68,6 +72,8 @@ Como programador, a menudo me encuentro absorto en mi trabajo, lo que me lleva a
 4. Habilita y ejecuta el servicio:
     ```bash
     sudo systemctl enable battery-monitor.service
+    ```
+    ```bash
     sudo systemctl start battery-monitor.service
     ```
 ### Paso 3: Verificar el estado del servicio
@@ -99,6 +105,8 @@ Para deshabilitar y eliminar el servicio:
 1. Detén y deshabilita el servicio:
     ```bash
     sudo systemctl stop battery-monitor.service
+    ```
+    ```bash
     sudo systemctl disable battery-monitor.service
     ```
 
