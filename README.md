@@ -6,7 +6,7 @@ Este proyecto consiste en un script diseñado para monitorear el estado de la ba
 
 ## Motivación
 
-Como programador, a menudo me encuentro absorto en mi trabajo, lo que me lleva a perder de vista el estado de la batería de mi laptop. Para evitar interrupciones en mi flujo de trabajo debido a una batería agotada, desarrollé este script que me avisa cuando la carga de la batería es baja, permitiéndome conectar el cargador a tiempo. Este proyecto surge de la necesidad de automatizar esta tarea y mejorar mi productividad.
+Como programador, a menudo me encuentro absorto en mi trabajo, lo que me lleva a perder de vista el estado de la batería de mi laptop. Para evitar interrupciones en mi flujo de trabajo debido a una batería agotada, desarrollé este script que me avisa cuando la carga de la batería es baja, permitiéndome prevenir apagones innecesarios. Este proyecto surge de la necesidad de automatizar esta tarea y mejorar mi productividad.
 
 ## Instrucciones para la Instalación y Configuración
 
@@ -20,7 +20,7 @@ Como programador, a menudo me encuentro absorto en mi trabajo, lo que me lleva a
 
 1. Clona el repositorio en una ubicación deseada (por ejemplo, `/opt`):
     ```bash
-    sudo git clone https://tu-repositorio-url /opt/check_low_battery
+    sudo git clone https://github.com/brianmrdev/check_low_battery.git /opt
     ```
    
 2. Crea y activa un entorno virtual en la carpeta del proyecto:
